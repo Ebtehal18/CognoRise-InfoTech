@@ -1,0 +1,100 @@
+*,*::after,*::before{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+
+}
+body,html{
+    overflow-x: hidden;
+}
+main{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0,0.35),rgba(0,0,0,0.35)), url(../images/bg.jpg);
+    background-position:center right;
+    background-size: cover;
+}
+h1{
+    color: #8967B3;
+    font-size: 1.875rem;
+    font-weight: 800;
+}
+
+.content{
+    width: 60%;
+    background-color:rgb(230, 217, 162,0.85);
+    padding: 48px;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #C96868;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem  #8967b36f;
+}
+label.transfer,
+.enter-number{
+    color: #3d1f75;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn,
+.btn:hover,
+.btn:focus{
+    background-color: #CB80AB;
+}
+input[type='number']{
+    font-size: 17px;
+}
+i{
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.exchange{
+    font-size: 25px;
+    color:#624E88;
+    font-weight: 600;
+}
+.col-md-5 {
+    padding: 0;
+    margin-top: 24px;
+}
+
+/* media query */
+@media screen and (max-width:992px) {
+    .content {
+        width: 73%;}   
+}
+@media screen and (max-width:767px) {
+
+    h1{
+     font-size:25px;
+    }
+    .content{
+        width: 100%;
+        padding: 20px;
+    }
+ 
+    .col-md-5 {
+      padding: 0 12px;
+      margin-top: 0;
+    }
+      
+      .exchange{
+        font-size: 23px;
+        text-align: center;
+        font-weight: 800;
+      }
+      .mobile-input {
+            width: 65%;
+            text-align: center;
+            margin: auto;
+      }
+      i{
+        margin-top: 30px;
+      }
+}

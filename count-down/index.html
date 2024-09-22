@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+      <!-- fontawsome -->
+      <link rel="stylesheet" href="css/all.min.css">
+      <!-- bootstrab style -->
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- cssstyle -->
+       <link rel="stylesheet" href="css/style.css">
+    <title>countdown</title>
+</head>
+<body>
+    <main class="d-flex justify-content-center">
+        <div class="container  d-flex justify-content-center align-items-center ">
+            <div class="row w-100">
+                <div class="col-md-12 d-flex justify-content-center p-0">
+                    <div class="content shadow-lg rounded">
+                        <h1 class="text-center mb-3" > COUNTDOWN TIMER</h1>
+                        <form >
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="date" class="mb-2 text-white">Enter Date</label>
+                                <input type="Date" name="date" id="date" class="form-control mb-3 date ">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="time" class="mb-2 text-white">Enter Time</label>
+                                    <input type="time" name="time" id="time" class="form-control time " >
+                                    
+                                </div>
+                                <div class="alert alert-danger d-none "></div>
+                            </div>    
+                            <div class="btns  mt-3 d-flex justify-content-center">
+                                <button class="btn btn-calc text-white  me-2">Calculate</button>
+                                <button class="btn btn-stop text-white me-2 ">Stop</button>
+                                <button class="btn btn-reset text-white  ">Reset</button>
+                            </div>
+                        </form>
+                        <div class="countdown d-flex justify-content-between mt-4 pt-3">
+                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                <p class="heading text-uppercase text-white">days</p>
+                                <span class="day">0</span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                <p class="heading text-uppercase text-white">hours</p>
+                                <span class="hour">0</span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                <p class="heading text-uppercase text-white">minutes</p>
+                                <span class="minute">0</span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                <p class="heading text-uppercase text-white">seconds</p>
+                                <span class="second">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+ 
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+*,*::after,*::before{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+
+}
+main{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/bg.jpg);
+    background-position:center center;
+    background-size: cover;
+}
+.content{
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+    padding: 2rem 2.5rem;
+    max-height: 90vh;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color:  transparent transparent #5a95ff transparent;;
+    outline: 0;
+    box-shadow:none;
+}
+.form-control{
+    background-color: transparent;
+    border-color: transparent transparent #d1d3d4 transparent;
+}
+.btn-add{
+    padding: 14px 17px;
+    align-self: center;
+    font-weight: 500;
+}
+.task{
+padding:0.8rem 1rem;
+box-shadow: 0 0 0.5rem 1rem rgba(0,0,0,0.05);
+}
+
+.task .task-check{
+    position: relative;
+    appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    border: .125rem solid #e1e1e1;
+}
+.task .task-check::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.task .task-check:checked{
+    background-color: #5a95ff;
+    border-color: #5a95ff;
+}
+
+.task .task-check:checked::before {
+    content: '\f00c';
+    color: #fff;
+    font-weight: 900; 
+    font-size: 0.8rem;
+    font-family: 'Font Awesome 5 Free'; 
+    position: absolute;
+}
+.task .task-name{
+ max-width: 90%; 
+    font-size: 0.9rem;
+    word-break: break-all;
+}
+.completed{
+    text-decoration: line-through;
+    color: #847676;
+}

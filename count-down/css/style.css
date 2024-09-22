@@ -1,0 +1,101 @@
+*,*::after,*::before{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+
+}
+body,html{
+    overflow-x: hidden;
+}
+main{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/bg.jpg);
+    background-position:center right;
+    background-size: cover;
+}
+h1{
+    color:#C96868;
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.content{
+    width: 60%;
+    background-color: rgba(0,0,0,0.65);
+    padding: 48px;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #C96868;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem #c9686876;
+}
+.btn{
+    font-weight: 500;
+}
+.btns .btn-calc,
+.btns .btn-calc:focus{
+    background-color: #7EACB5;
+}
+.btns .btn-calc:hover{
+    border: 1px solid  #7EACB5;
+    background-color: transparent;
+}
+.btns .btn-reset,
+.btns .btn-reset:focus{
+background-color: #FADFA1;
+}
+.btns .btn-reset:hover{
+    border:1px solid #FADFA1; 
+    background-color: transparent;
+}
+.btns .btn-stop,
+.btns .btn-stop:focus{
+    background-color: #C96868;
+}
+.btns .btn-stop:hover {
+    border: 1px solid  #C96868;
+    background-color: transparent;
+}
+.heading{
+    font-weight: 500;
+    font-size: 1.125rem;
+
+}
+.heading ~ span{
+    font-size: 6.25rem;
+    flex-shrink: 0;
+    color: #C96868;
+}
+
+  
+@media screen and (max-width:767px) {
+
+    h1{
+     font-size: 1.5625rem;
+    }
+    .heading ~ span{
+        font-size: 2.5rem;
+       
+    }
+    .content{
+        width: 100%;
+        padding: 25px;
+    }
+    .heading{
+        font-size: 1rem;
+    }
+    .countdown > div:not(:last-child) {
+        margin-right: 20px;
+    }
+    .content.rounded .countdown > div {
+        flex: 1;
+    width: 25%;
+    overflow: hidden;
+      }
+      
+}

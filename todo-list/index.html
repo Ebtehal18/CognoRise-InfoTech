@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="images/to-do-list.png" type="image/x-icon">
+      <!-- fontawsome -->
+      <link rel="stylesheet" href="css/all.min.css">
+      <!-- bootstrab style -->
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- cssstyle -->
+       <link rel="stylesheet" href="css/style.css">
+    <title>todolist</title>
+</head>
+<body>
+    <main class="vh-100 ">
+        <div class="container h-100 w-100 d-flex align-items-center justify-content-center">
+           <div class="content  bg-light rounded overflow-y-auto ">
+            <div class="form-floating mb-3 d-flex">
+                <input type="text" class="form-control me-3 rounded-0 " id="floatingInput" placeholder="Task To Be Done ...">
+                <label for="floatingInput">Task To Be Done ...</label>
+                <button class="btn btn-primary btn-add text-white">Add</button>
+                <button class="btn btn-warning btn-update d-none text-white">Update</button>
+              </div>
+              <p id="countP" class="mb-0">You have <span class="countVal">0</span> task (s) to complete </p>
+             <div class="tasks">
+             </div>
+              <div class="alert alert-danger text-center mt-3 d-none">Input cannot be empty!</div>
+           </div>
+        </div>
+    </main>
+ 
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
