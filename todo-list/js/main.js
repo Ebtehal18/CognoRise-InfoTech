@@ -26,7 +26,11 @@ if(localStorage.getItem("tasks")===null){
     tasksContainer=[]
 }else{
     tasksContainer=JSON.parse(localStorage.getItem('tasks'))
-    taskVal=tasksContainer.length
+        for(let i=0;i<tasksContainer.length;i++){
+        if(!tasksContainer[i].isChecked)
+            taskVal++
+    }
+    updateTaskVal(taskVal)
     displayTasks(tasksContainer)
 }
 updateTaskVal(taskVal)
