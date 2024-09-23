@@ -97,5 +97,9 @@ background-color: #FADFA1;
     width: 25%;
     overflow: hidden;
       }
+      .alert{
+        margin-top:20px
+      }
+      
       
 }
